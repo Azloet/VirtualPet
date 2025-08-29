@@ -35,17 +35,17 @@ void butterfly(int centerX,int centerY,int bodyColor,int wingColor){
     arc(centerX-wingWidth/2,centerY+1,wingWidth,wingHeight,PI+HALF_PI,TWO_PI,OPEN);
     arc(centerX,centerY-wingHeight/2,wingWidth,wingHeight,HALF_PI,PI,OPEN);
   
-    //bottom left
-    arc(centerX,centerY+wingHeight/2+1,wingWidth,wingHeight,PI,PI+HALF_PI,OPEN);
-    arc(centerX-wingWidth/2,centerY,wingWidth,wingHeight,0,HALF_PI,OPEN);
-    
     //top right
-    arc(centerX+wingWidth/2,centerY,wingWidth,wingHeight,PI,PI+HALF_PI,OPEN);
-    arc(centerX,centerY-wingHeight/2-1,wingWidth,wingHeight,0,HALF_PI,OPEN);
+    arc(centerX+wingWidth/2,centerY+1,wingWidth,wingHeight,PI,PI+HALF_PI,OPEN);
+    arc(centerX,centerY-wingHeight/2,wingWidth,wingHeight,0,HALF_PI,OPEN);
     
     //bottom right
     arc(centerX,centerY+wingHeight/2,wingWidth,wingHeight,PI+HALF_PI,TWO_PI,OPEN);
     arc(centerX+wingWidth/2,centerY-1,wingWidth,wingHeight,HALF_PI,PI,OPEN);
+    
+    //bottom left
+    arc(centerX,centerY+wingHeight/2,wingWidth,wingHeight,PI,PI+HALF_PI,OPEN);
+    arc(centerX-wingWidth/2,centerY-1,wingWidth,wingHeight,0,HALF_PI,OPEN);
   }
   
   //body and head
